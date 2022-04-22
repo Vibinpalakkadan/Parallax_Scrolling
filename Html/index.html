@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Stylish website
+    </title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">VBN</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+</body>
+<section>
+    <img src="../Assets/stars.png" alt="Star" id="stars">
+    <img src="../Assets/moon.png" alt="Moon" id="moon">
+    <img src="../Assets/mountains_behind.png" alt="mountains_behind" id="mountains_behind">
+    <h1 id="name"> Save Our Earth</h1>
+    <a href="#about" id="btn">More</a>
+    <img src="../Assets/mountains_front.png" alt="mountains_front" id="mountains_front">
+</section>
+<div class="second" id="about">
+    <h2 id="heading">
+        Our Earth, Our Asset
+    </h2>
+    <p>
+    Our atmosphere is a protective layer of gases surrounding Earth . It can be polluted by natural sources, like when a volcano  erupts and spews gases into the air. But human activity also pollutes the atmosphere. Often, pollutants are released as byproducts of our daily activities, like using motor vehicles and producing energy  in power plants. </p>
+
+   <p>Here are some types of air pollution caused by human activity.</p>  
+    
+<h3>Chemicals:</h3> <p>This includes sulfur dioxide gas released from coal and oil refineries. Some of these chemicals take part in reactions in the atmosphere, and can result in acid rain.</p>
+    
+<h3>Greenhouse gases like carbon dioxide :</h3> <p>These gases are found naturally in our atmosphere. But human activity is also releasing them in large quantities. This contributes to global climate change .</p>
+    
+<h3>Urban smog:</h3> <p>These harmful gases and tiny particles can irritate our eyes, nose, and throat in the short-term. In the long-term, they can worsen heart and lung problems.</p>
+    
+    
+<h3>Use our vehicles less.</h3>
+<p>We can take public transportation, ride a bike, or walk whenever possible. This will reduce the amount of pollutants emitted into the air.</p>
+    
+    <h3>Use cleaner fuels and more fuel-efficient products.</h3>
+    <p>Encourage your parents and other grown-ups to use cleaner fuels in their car. A good choice is E10, a blend of clean-burning ethanol and gasoline. Or, they can switch to a more fuel-efficient car that gets better gas mileage. On a smaller scale, they can replace gas-powered lawn mowers with alternatives such as electric or manual mowers. </p>
+    
+    <h3>Factories can use control devices.</h3>
+    <p>For example, factories can use "scrubbers" on smoke stacks to trap particles and protect against acid rain. These control devices remove pollution at its source. </p>
+
+</div>
+<script>
+   let start= document.getElementById('stars');
+   let moon= document.getElementById('moon'); 
+   let mountains_behind= document.getElementById('mountains_behind'); 
+   let mountains_front= document.getElementById('mountains_front'); 
+   let name= document.getElementById('name');
+   let heading= document.getElementById('heading');
+   window.addEventListener('scroll',function(){
+       let value = window.scrollY;
+       start.style.left = value*0.25 + 'px';
+       moon.style.top = value*1.25 + 'px';
+       mountains_behind.style.top = value*0.6 + 'px';
+       name.style.marginRight = value*1.9 + 'px';
+       heading.style.marginLeft = value*0.3 + 'px';
+   }) 
+</script>
+</html>
